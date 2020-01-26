@@ -1,0 +1,99 @@
+{
+	"name": "vscode-close-editor",
+	"displayName": "vscode-close-editor",
+	"description": "",
+	"publisher": "tomer-epstein",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.openNewInstance",
+		"onCommand:extension.openHere",
+		"onCommand:extension.openFolderDlg"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.closeActiveEditor",
+				"title": "Close Active Editor"
+			},
+			{
+				"command": "extension.closeOtherEditors",
+				"title": "Close Other Editors"
+			},
+			{
+				"command": "extension.closeEditorsInGroup",
+				"title": "Close Editors In Group"
+			},
+			{
+				"command": "extension.closeEditorsInOtherGroups",
+				"title": "Close Editors In Other Groups"
+			},
+			{
+				"command": "extension.closeEditorsToTheLeft",
+				"title": "Close Editors To The Left"
+			},
+			{
+				"command": "extension.closeEditorsToTheRight",
+				"title": "Close Editors To The Right"
+			},
+			{
+				"command": "extension.closeAllEditors",
+				"title": "Close All Editors"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.closeActiveEditor",
+					"group": "navigation@1"
+				},
+				{
+					"command": "extension.closeOtherEditors",
+					"group": "navigation@1"
+				},
+				{
+					"command": "extension.closeEditorsInGroup",
+					"group": "navigation@1"
+				},
+				{
+					"command": "extension.closeEditorsInOtherGroups",
+					"group": "navigation@1"
+				},
+				{
+					"command": "extension.closeEditorsToTheLeft",
+					"group": "navigation@1"
+				},
+				{
+					"command": "extension.closeEditorsToTheRight",
+					"group": "navigation@1"
+				},
+				{
+					"command": "extension.closeAllEditors",
+					"group": "navigation@1"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"package": "vsce package .",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"vsce": "^1.71.0",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
