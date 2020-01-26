@@ -11,9 +11,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.openNewInstance",
-		"onCommand:extension.openHere",
-		"onCommand:extension.openFolderDlg"
+		"onCommand:extension.closeActiveEditor",
+		"onCommand:extension.closeOtherEditors",
+		"onCommand:extension.closeEditorsInGroup",
+		"onCommand:extension.closeEditorsInOtherGroups",
+		"onCommand:extension.closeEditorsToTheLeft",
+		"onCommand:extension.closeEditorsToTheRight",
+		"onCommand:extension.closeAllEditors"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
