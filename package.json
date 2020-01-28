@@ -52,7 +52,7 @@
 			}
 		],
 		"menus": {
-			"editor/title/context": [
+			"editor/title": [
 				{
 					"command": "extension.closeActiveEditor"
 				},
