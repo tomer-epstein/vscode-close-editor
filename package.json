@@ -24,62 +24,55 @@
 		"commands": [
 			{
 				"command": "extension.closeActiveEditor",
-				"title": "Close Active Editor"
+				"title": "VSCode Close Active Editor"
 			},
 			{
 				"command": "extension.closeOtherEditors",
-				"title": "Close Other Editors"
+				"title": "VSCode Close Other Editors"
 			},
 			{
 				"command": "extension.closeEditorsInGroup",
-				"title": "Close Editors In Group"
+				"title": "VSCode Close Editors In Group"
 			},
 			{
 				"command": "extension.closeEditorsInOtherGroups",
-				"title": "Close Editors In Other Groups"
+				"title": "VSCode Close Editors In Other Groups"
 			},
 			{
 				"command": "extension.closeEditorsToTheLeft",
-				"title": "Close Editors To The Left"
+				"title": "VSCode Close Editors To The Left"
 			},
 			{
 				"command": "extension.closeEditorsToTheRight",
-				"title": "Close Editors To The Right"
+				"title": "VSCode Close Editors To The Right"
 			},
 			{
 				"command": "extension.closeAllEditors",
-				"title": "Close All Editors"
+				"title": "VSCode Close All Editors"
 			}
 		],
 		"menus": {
-			"explorer/context": [
+			"editor/title/context": [
 				{
-					"command": "extension.closeActiveEditor",
-					"group": "navigation@1"
+					"command": "extension.closeActiveEditor"
 				},
 				{
-					"command": "extension.closeOtherEditors",
-					"group": "navigation@1"
+					"command": "extension.closeOtherEditors"
 				},
 				{
-					"command": "extension.closeEditorsInGroup",
-					"group": "navigation@1"
+					"command": "extension.closeEditorsInGroup"
 				},
 				{
-					"command": "extension.closeEditorsInOtherGroups",
-					"group": "navigation@1"
+					"command": "extension.closeEditorsInOtherGroups"
 				},
 				{
-					"command": "extension.closeEditorsToTheLeft",
-					"group": "navigation@1"
+					"command": "extension.closeEditorsToTheLeft"
 				},
 				{
-					"command": "extension.closeEditorsToTheRight",
-					"group": "navigation@1"
+					"command": "extension.closeEditorsToTheRight"
 				},
 				{
-					"command": "extension.closeAllEditors",
-					"group": "navigation@1"
+					"command": "extension.closeAllEditors"
 				}
 			]
 		}
