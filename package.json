@@ -2,6 +2,7 @@
 	"name": "vscode-close-editor",
 	"displayName": "vscode-close-editor",
 	"description": "",
+	"repository": "https://github.com/tomer-epstein/vscode-close-editor",
 	"publisher": "tomer-epstein",
 	"version": "0.0.1",
 	"engines": {
@@ -24,55 +25,90 @@
 		"commands": [
 			{
 				"command": "extension.closeActiveEditor",
-				"title": "VSCode Close Active Editor"
+				"title": "VSCode Close Active Editor",
+				"icon": {
+					"light": "./resources/images/icons/01.svg",
+					"dark": "./resources/images/icons/01.svg"
+				}
 			},
 			{
 				"command": "extension.closeOtherEditors",
-				"title": "VSCode Close Other Editors"
+				"title": "VSCode Close Other Editors",
+				"icon": {
+					"light": "./resources/images/icons/02.svg",
+					"dark": "./resources/images/icons/02.svg"
+				}
 			},
 			{
 				"command": "extension.closeEditorsInGroup",
-				"title": "VSCode Close Editors In Group"
+				"title": "VSCode Close Editors In Group",
+				"icon": {
+					"light": "./resources/images/icons/03.svg",
+					"dark": "./resources/images/icons/03.svg"
+				}
 			},
 			{
 				"command": "extension.closeEditorsInOtherGroups",
-				"title": "VSCode Close Editors In Other Groups"
+				"title": "VSCode Close Editors In Other Groups",
+				"icon": {
+					"light": "./resources/images/icons/04.svg",
+					"dark": "./resources/images/icons/04.svg"
+				}
 			},
 			{
 				"command": "extension.closeEditorsToTheLeft",
-				"title": "VSCode Close Editors To The Left"
+				"title": "VSCode Close Editors To The Left",
+				"icon": {
+					"light": "./resources/images/icons/05.svg",
+					"dark": "./resources/images/icons/05.svg"
+				}
 			},
 			{
 				"command": "extension.closeEditorsToTheRight",
-				"title": "VSCode Close Editors To The Right"
+				"title": "VSCode Close Editors To The Right",
+				"icon": {
+					"light": "./resources/images/icons/06.svg",
+					"dark": "./resources/images/icons/06.svg"
+				}
 			},
 			{
 				"command": "extension.closeAllEditors",
-				"title": "VSCode Close All Editors"
+				"title": "VSCode Close All Editors",
+				"icon": {
+					"light": "./resources/images/icons/07.svg",
+					"dark": "./resources/images/icons/07.svg"
+				}
 			}
 		],
 		"menus": {
 			"editor/title": [
 				{
-					"command": "extension.closeActiveEditor"
+					"command": "extension.closeActiveEditor",
+					"group": "navigation"
 				},
 				{
-					"command": "extension.closeOtherEditors"
+					"command": "extension.closeOtherEditors",
+					"group": "navigation"
 				},
 				{
-					"command": "extension.closeEditorsInGroup"
+					"command": "extension.closeEditorsInGroup",
+					"group": "navigation"
 				},
 				{
-					"command": "extension.closeEditorsInOtherGroups"
+					"command": "extension.closeEditorsInOtherGroups",
+					"group": "navigation"
 				},
 				{
-					"command": "extension.closeEditorsToTheLeft"
+					"command": "extension.closeEditorsToTheLeft",
+					"group": "navigation"
 				},
 				{
-					"command": "extension.closeEditorsToTheRight"
+					"command": "extension.closeEditorsToTheRight",
+					"group": "navigation"
 				},
 				{
-					"command": "extension.closeAllEditors"
+					"command": "extension.closeAllEditors",
+					"group": "navigation"
 				}
 			]
 		}
